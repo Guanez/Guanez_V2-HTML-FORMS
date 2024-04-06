@@ -11,7 +11,7 @@ body {
 }
 
 .background-image {
-    background-image: url('/images/mcdobg.jpg'); 
+    background-image: url('images/mcdobg.jpg'); 
     background-size: 100% 100%;
     background-position: center;
     height: 100vh; 
