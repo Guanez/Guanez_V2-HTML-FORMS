@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
             `;
             document.body.appendChild(messageBox);
             document.getElementById('goBackBtn').addEventListener('click', function() {
-                window.location.href = 'http://127.0.0.1:5500/mainpage.html';
+                window.location.href = 'http://127.0.0.1:5500/index.html';
             });
         }
     }
