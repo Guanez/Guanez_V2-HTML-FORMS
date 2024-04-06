@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Form</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="McDonalds_logo_PNG18.png">
+
+</head>
+<body>
+
+<div class="container">
+  <div class="logo">
+    <img src="mcdonalds-png-logo-2771.png" alt="Restaurant Logo">
+  </div>
+  <h1 class="form-title">Order Form</h1>
+  <h2 class="form-subtitle">Please fill out the form below</h2>
+  
+  <form id="restaurantForm">
+    <div class="group-of-group">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+    </div>
+    </div>
+
+    <div class="group-of-group">
+    <div class="form-group">
+      <label>Type of Cuisine:</label>
+      <div class="dropdown">
+        <button class="dropbtn" id="cuisineDropdown"> Select Cuisine </button>
+        <div class="dropdown-content">
+          <a href="#" id="Filipino">Filipino</a>
+          <a href="#" id="Italian">Italian</a>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Mode of Payment:</label>
+      <div class="dropdown">
+        <button class="dropbtn" id="paymentDropdown"> Select Payment Method </button>
+        <div class="dropdown-content">
+          <a href="#" id="cashOnDelivery">Cash on Delivery</a>
+          <a href="#" id="gcash">via Gcash</a>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Dine-in / Take-out:</label>
+      <div class="dropdown">
+        <button class="dropbtn" id="methodDropdown">Select Method</button>
+        <div class="dropdown-content">
+          <a href="#" id="dineIn">Dine-in</a>
+          <a href="#" id="takeOut">Take-out</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="form-group">
+      <label for="comments">Comments/Instruction:</label>
+      <textarea id="comments" name="comments"></textarea>
+    </div>
+    <button type="submit" id="submitBtn" class="button">Order Placed</button>
+    <button type="button" id="cancelBtn">Cancel</button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
